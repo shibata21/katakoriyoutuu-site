@@ -1,0 +1,305 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.8;
+/*  font-family: 'Sawarabi Mincho', sans-serif;*/
+  font-family: 'M PLUS 1p', sans-serif;
+  word-break: break-all;
+  
+  background-color: #45d5e8;
+  background-image: url(../images/seitai_header_back_pc.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position: center top;
+}
+
+p,br,h1,h2,h3,h4,h5,h6,span,img,tabale,th,tr,td{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-family: 'M PLUS 1p', sans-serif;
+}
+small{
+  font-size: 10px;
+}
+#wrap{
+  background-color: #45d5e8;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/*header関連//////////*/
+.header{
+  width:800px;
+  height: 100px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.logo{
+  text-align: left;
+  float: left;
+}
+
+
+/*content関連//////////*/
+.content{
+  width: 800px;
+  margin:0 auto;
+  background-color: #fff;
+  padding: 20px 0 10px 0; 
+}
+.icon::before{
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #26c7ce;
+}
+section{
+  margin: 0 50px 30px 50px;
+  border-bottom: 1px dashed;
+  padding-bottom: 10px;
+}
+
+
+/*class_information*/
+.information table{
+  width: auto;
+  margin: 0 auto;
+}
+.information th{
+  border-right: 5px solid #26c7ce;
+  text-align: left;
+  font-size: 15px;
+}
+.information td{
+  text-align: left;
+  font-size: 15px;
+}
+.information small{
+  font-size: 13px;
+}
+
+
+/*class_intro*/
+.intro .text{
+  width: 340px;
+  float: left;
+}
+.intro .bx-wrapper{
+  width: 320px;
+  float: right;
+  margin-bottom: 30px;
+}
+
+
+/*class_recommended*/
+.recommended .text{
+  width: 340px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  float: left;
+}
+.recommended_image{
+  width: 340px;
+  float: right;
+}
+
+
+/*class_map*/
+.map .map_box{
+  width: 340px;
+  float: left;
+}
+.map .map_image{
+  width: 340px;
+  float: right;
+}
+
+
+/*class_price*/
+.price .discount{
+  color: #eb11c1;
+}
+.price .text p{
+  width: 100%;
+}
+.price .service-1000{
+  background: linear-gradient(transparent 60%, #5df3ff 60%);
+}
+.price .sen{
+   color: #eb11c1;
+}
+.price_table{
+  margin-top: 10px;
+}
+.price_table table{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.price_table table{
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.price_table td{
+  border: 0.2vw solid;
+}
+.price_table tr .title{
+  border: 3px solid #26c7ce;
+}
+.price_table tr th{
+  border: 0.2vw solid;
+}
+
+
+
+/*footer関連//////////*/
+.footer{
+  width: 800px;
+  padding: 40px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #12e7f8;
+}
+
+
+
+/*スマホ対応///////////*/
+@media screen and (max-width:800px){
+  
+  body{
+    font-size: 4.5vw;
+    background-image: url(../images/seitai_header_back.png);
+    background-size: 100%;
+  }
+  h1{
+    font-size: 8vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+  img{
+    max-width: 100%;
+  }
+  
+  
+/*スマホheader関連*/
+  .header{
+    width: 90%;
+    margin: 0 auto 0px auto;
+  }
+  .tel_number{
+/*  text-align: right;*/
+    clear: both;
+}
+  .logo{
+    width: auto;
+    clear: both;
+    margin: 0 auto;
+  }
+  
+  
+  /*スマホcontent関連*/
+  #wrap{
+    max-width: 100%;
+/*    padding: 35px 0 0;*/
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .content{
+    width: 90%;
+    margin: 0 auto;
+  }
+  section{
+    width: auto;
+    margin: 0 5% 40px 5%;
+  }
+  
+  
+/*スマホinformation*/
+  .information th{
+    table-layout: fixed;
+    border-right: 2vw solid #26c7ce;
+    font-size: 3vw;
+   } 
+  .information td{
+    font-size: 3vw;
+  }
+  .information small{
+    font-size: 2.9vw;
+   }
+  .intro .text{
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .intro .bx-wrapper{
+    text-align: center;
+    width: auto;
+}
+  
+  
+/*スマホrecommended*/
+  .recommended .text{
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .recommended_image{
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  
+/*スマホmap*/
+  .map .map_box{
+    float: none;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;    
+    height: 0;
+    padding-bottom: 75%;   
+    overflow: hidden;
+  }
+  .map .map_box iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;   
+    margin-bottom: 20px;
+  }
+  .map .map_image{
+    padding-left: 0;
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  
+  /*スマホfooter関連*/
+  .footer{
+    max-width: 90%;
+    text-align: center;
+  }
+}
