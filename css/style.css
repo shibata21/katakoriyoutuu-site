@@ -118,6 +118,44 @@ section{
   float: right;
 }
 
+/*class_acupuncture*/
+.acupuncture .text{
+  width: 340px;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  float: left;
+}
+.acupuncture_image{
+  width: 340px;
+  height: 305px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acupuncture_before_image{
+  width: 340px;
+  float: left;
+  position: relative;
+}
+.acupuncture_after_image{
+  width: 340px;
+  float: right;
+  position: relative;
+}
+.acupuncture_result{
+  margin-top: 10px;
+}
+.acupuncture_result label {
+  position: absolute;
+  background-color: #26c7ce;
+  display: block;
+  font-size: 1rem;
+  width: 5rem;
+  color: #fff;
+  padding: 1px 0 1px 5px;
+}
 
 /*class_map*/
 .map .map_box{
@@ -268,7 +306,41 @@ section{
     width: 100%;
     max-width: 100%;
   }
-  
+
+
+/*スマホacupuncture*/
+  .acupuncture .text{
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+  .acupuncture_image{
+    float: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+  .acupuncture_before_image{
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .acupuncture_after_image{
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  } 
+  .acupuncture_result label {
+    position: absolute;
+    background-color: #26c7ce;
+    display: block;
+    width: 5rem;
+    color: #fff;
+    padding: 0 0 0 5px;
+  }
   
 /*スマホmap*/
   .map .map_box{
